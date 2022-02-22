@@ -16,7 +16,7 @@
  13.Footer
  14.nouislider style (used in priccing range)
  15.Single page
-
+ 16.Product List
 -------------------------------------------------*/
 /*-------------------------------------------------------*/
 /* 1. Global
@@ -3187,7 +3187,7 @@ footer {
 /* =  nouislider style (used in priccing range)
 /*-------------------------------------------------*/
 
-.noUi-target * {
+/* .noUi-target * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -3263,7 +3263,7 @@ footer {
 .noUi-state-tap .noUi-origin {
   -webkit-transition: left 0.3s, top 0.3s;
   transition: left 0.3s, top 0.3s;
-}
+} */
 
 /*-------------------------------------------------*/
 /* =  Single page
@@ -3364,4 +3364,12 @@ footer {
 
 .slider-caption .flex-control-nav {
   bottom: -80px;
+}
+
+/**
+  Product List ------------
+*/
+.bread-crumb{
+  background-color: #f5f5f5;
+  padding: 16px 0;
 }
