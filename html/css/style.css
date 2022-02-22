@@ -85,6 +85,9 @@
   top: 0;
   z-index: 1;
 }
+a{
+  color: #f08519;
+}
 /*-------------------------------------------------------*/
 /* 1. Isotope filtering
 /*-------------------------------------------------------*/
@@ -3099,350 +3102,87 @@ ul.popular-product li span {
 /*-------------------------------------------------*/
 
 footer {
-  padding-top: 25px;
+  padding: 25px 0;
   border-top: 1px solid #dbdbdb;
+  font-size: 14px;
 }
-
-.footer-widgets {
-  margin-bottom: 30px;
+.footer{
+  background-color: #272727;
+  color: #c5c5c5;
 }
-
-.footer-widgets:first-child {
-  padding-bottom: 16px;
-  border-bottom: 1px solid #dbdbdb;
+.footer h3{
+  color: #eee;
+  width: 70%;
+  /* border-bottom: 1px solid #eee; */
+  padding-bottom: 10px;
+  /* margin-bottom: 24px; */
 }
-
-.footer-widgets h4 {
-  color: #007aff;
-  margin-bottom: 16px;
+.footer a {
+  color: #c5c5c5;
 }
-
-.footer-widgets p {
-  line-height: 22px;
-  margin-bottom: 5px;
-}
-
-.footer-widgets.text-widget img {
-  margin-bottom: 10px;
-}
-
-ul.tweets li {
-  margin-bottom: 15px;
-}
-
-ul.tweets li p {
-  margin-bottom: 0px;
-  color: #797979;
-}
-
-ul.tweets li p a {
-  color: #797979;
-  text-decoration: underline;
-}
-
-ul.tweets li p a.tweet-acc {
-  color: #007aff;
-  text-decoration: none;
-}
-
-ul.tweets li span {
-  color: #797979;
-  font-size: 13px;
-  font-family: "Open Sans", sans-serif;
-}
-
-ul.flickr-list {
-  overflow: hidden;
-}
-
-ul.flickr-list li {
-  float: left;
-  margin-right: 13px;
-  margin-bottom: 13px;
-}
-
-ul.flickr-list li:nth-child(3n) {
-  margin-right: 0px;
-}
-
-ul.flickr-list li a {
-  display: inline-block;
-  padding: 8px;
-  border: 1px solid #dbdbdb;
-  max-width: 78px;
-  overflow: hidden;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -o-border-radius: 8px;
-  transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-}
-
-ul.flickr-list li a img {
-  width: 100%;
-  transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-}
-
-ul.flickr-list li a:hover {
-  border: none;
-}
-
-ul.flickr-list li a:hover img {
-  transform: scale(1.3);
-  -webkit-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  -moz-transform: scale(1.3);
-  -o-transform: scale(1.3);
-}
-
-ul.pop-post li a {
-  display: inline-block;
-  color: #797979;
-  font-size: 13px;
-  font-family: "Open Sans", sans-serif;
-  line-height: 22px;
-  font-weight: 300;
-}
-
-ul.pop-post li a i {
-  color: #007aff;
-  font-size: 13px;
-  margin-right: 8px;
-}
-
-ul.tag-widget-list li {
-  display: inline-block;
-  margin-right: 6px;
-  margin-bottom: 10px;
-}
-
-ul.tag-widget-list li a {
-  display: inline-block;
-  color: #797979;
-  font-size: 12px;
-  font-family: "Open Sans", sans-serif;
-  padding: 5px 8px;
-  text-decoration: none;
-  border: 1px solid #e5e5e5;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -o-border-radius: 8px;
-  transition: all 0.17s ease-in-out;
-  -moz-transition: all 0.17s ease-in-out;
-  -webkit-transition: all 0.17s ease-in-out;
-  -o-transition: all 0.17s ease-in-out;
-}
-
-ul.tag-widget-list li a:hover {
-  color: #007aff;
-  border: 1px solid #007aff;
-}
-
-form#footer-contact input[type="text"] {
-  width: 50%;
-  float: left;
-  border: 1px solid #dbdbdb;
-  color: #797979;
-  font-size: 11px;
-  font-family: "Open Sans", sans-serif;
-  padding: 10px;
-  outline: none;
-  transition: all 0.17s ease-in-out;
-  -moz-transition: all 0.17s ease-in-out;
-  -webkit-transition: all 0.17s ease-in-out;
-  -o-transition: all 0.17s ease-in-out;
-}
-
-form#footer-contact input[type="text"]:focus,
-form#footer-contact textarea:focus {
-  border: 1px solid #007aff;
-}
-
-form#footer-contact input[name="name"] {
-  border-right-color: transparent;
-}
-
-form#footer-contact textarea {
-  width: 100%;
-  border: 1px solid #dbdbdb;
-  color: #797979;
-  font-size: 11px;
-  font-family: "Open Sans", sans-serif;
-  padding: 10px;
-  height: 160px;
-  border-top-color: transparent;
-  margin: 0;
-  outline: none;
-  transition: all 0.17s ease-in-out;
-  -moz-transition: all 0.17s ease-in-out;
-  -webkit-transition: all 0.17s ease-in-out;
-  -o-transition: all 0.17s ease-in-out;
-}
-
-form#footer-contact button[type="submit"] {
+.chat-online{
+  color: #c5c5c5;
+  padding-top: 16px;
+  cursor: pointer;
   position: relative;
-  float: right;
-  color: #007aff;
-  font-size: 13px;
-  font-family: "Open Sans", sans-serif;
-  text-transform: uppercase;
-  padding: 12px;
-  border: 1px solid #dbdbdb;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
-  background: #fff;
-  margin-top: -46px;
-  margin-right: 1px;
-  z-index: 2;
-  position: relative;
-  transition: all 0.17s ease-in-out;
-  -moz-transition: all 0.17s ease-in-out;
-  -webkit-transition: all 0.17s ease-in-out;
-  -o-transition: all 0.17s ease-in-out;
 }
-
-form#footer-contact button i {
-  font-size: 18px;
-  color: #007aff;
-  margin-right: 10px;
+.chat-online > i {
+  font-size: 50px;
 }
-
-form#footer-contact button[type="submit"]:hover {
-  opacity: 0.7;
+.copyright{
+  padding-top: 24px;
+  margin-top: 24px;
+  display: flex;  
+  align-items: flex-end;
+  border-top: 1px solid #494949;
 }
-
-ul.contact-list li {
-  margin-bottom: 15px;
-}
-
-ul.contact-list li a {
-  position: relative;
+.copyright .footer-logo {
   display: inline-block;
-  color: #797979;
-  font-size: 12px;
-  font-family: "Open Sans", sans-serif;
-  padding: 6px 9px 6px 6px;
-  text-decoration: none;
-  border: 1px solid #dbdbdb;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -o-border-radius: 8px;
-  transition: all 0.17s ease-in-out;
-  -moz-transition: all 0.17s ease-in-out;
-  -webkit-transition: all 0.17s ease-in-out;
-  -o-transition: all 0.17s ease-in-out;
+  margin-right: 20px;
 }
-
-ul.contact-list li a i {
-  display: inline-block;
-  width: 15px;
-  font-size: 16px;
-  color: #a8a8a8;
+.copyright img{
+  height: 80px;
+}
+.go-top{
+  opacity: 0;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 40px;
+  color: #f08519;
+  transition: all 300ms;
+}
+.go-top.active{
+  opacity: 1;
+  transition: all 300ms;
+}
+.footer .social-icons{
+  float: none;
+}
+.footer .social-icons i{
+  font-size: 30px;
+}
+.footer .contact-icons{
+  display: flex;
+  
+}
+.footer .contact-icons i{
   margin-right: 16px;
-  vertical-align: middle;
-  transition: all 0.17s ease-in-out;
-  -moz-transition: all 0.17s ease-in-out;
-  -webkit-transition: all 0.17s ease-in-out;
-  -o-transition: all 0.17s ease-in-out;
 }
-
-ul.contact-list li a:hover {
-  border: 1px solid #007aff;
-}
-
-ul.contact-list li a:hover i {
-  color: #007aff;
-}
-
-ul.contact-list li a:after {
+.footer .chat-online .qrcode{
+  width: 120px;
   position: absolute;
-  content: "";
-  width: 28px;
-  height: 100%;
-  border-right: 1px solid #dbdbdb;
-  top: 0;
-  left: 0;
-  transition: all 0.17s ease-in-out;
-  -moz-transition: all 0.17s ease-in-out;
-  -webkit-transition: all 0.17s ease-in-out;
-  -o-transition: all 0.17s ease-in-out;
+  left: 50px;
+  top: 30;
+  display: none;
+  z-index: 3;
 }
-
-ul.contact-list li a:hover:after {
-  border-right: 1px solid #007aff;
-}
-
-.work-widget p {
-  margin-bottom: 10px;
-}
-
-p.work-time {
-  color: #444444;
-  font-size: 13px;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  margin-bottom: 0;
-  line-height: 20px;
-}
-
-p.work-time span {
-  font-weight: 400;
-  font-style: italic;
-}
-
-.footer-line {
-  padding: 10px;
-  background: #007aff;
-  overflow: hidden;
-}
-
-.footer-line p {
-  float: left;
-  padding: 12px 0;
-  color: #fff;
-  font-weight: 400;
-}
-
-.footer-line a.go-top {
-  display: inline-block;
-  position: relative;
-  float: right;
-  width: 42px;
-  height: 42px;
-  background: #ffffff;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -o-border-radius: 3px;
-  transition: all 0.17s ease-in-out;
-  -moz-transition: all 0.17s ease-in-out;
-  -webkit-transition: all 0.17s ease-in-out;
-  -o-transition: all 0.17s ease-in-out;
-}
-
-.footer-line a.go-top:hover {
-  opacity: 0.7;
-}
-
-.footer-line a.go-top:before {
-  font-family: "FontAwesome";
-  content: "\f106";
-  position: absolute;
-  font-size: 28px;
+.footer .chat-online .qrcode img{
   width: 100%;
-  color: #007aff;
-  vertical-align: middle;
-  text-align: center;
 }
-
+.whatsapp:hover .qrcode{
+  display: block;
+}
 /*-------------------------------------------------*/
 /* =  nouislider style (used in priccing range)
 /*-------------------------------------------------*/

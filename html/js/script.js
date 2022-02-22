@@ -80,18 +80,18 @@ $(document).ready(function($) {
 	/*-------------------------------------------------*/
 	/* =  fullwidth carousell
 	/*-------------------------------------------------*/
-	try {
-		var fullCarousell = $("#owl-demo");
-		fullCarousell.owlCarousel({
-			navigation : true,
-			afterInit : function(elem){
-				var that = this;
-				that.owlControls.prependTo(elem);
-			}
-		});
-	} catch(err) {
+	// try {
+	// 	var fullCarousell = $("#owl-demo");
+	// 	fullCarousell.owlCarousel({
+	// 		navigation : true,
+	// 		afterInit : function(elem){
+	// 			var that = this;
+	// 			that.owlControls.prependTo(elem);
+	// 		}
+	// 	});
+	// } catch(err) {
 
-	}
+	// }
 
 	/*-------------------------------------------------*/
 	/* =  fullwidth carousell
@@ -121,62 +121,62 @@ $(document).ready(function($) {
 	/*-------------------------------------------------*/
 	/* =  flexslider
 	/*-------------------------------------------------*/
-	try {
+	// try {
 
-		var SliderPost = $('.flexslider');
+	// 	var SliderPost = $('.flexslider');
 
-		SliderPost.flexslider({
-			animation: "slide",
-			slideshowSpeed: 3000,
-			easing: "swing",
-			direction: "vertical"
-		});
-	} catch(err) {
+	// 	SliderPost.flexslider({
+	// 		animation: "slide",
+	// 		slideshowSpeed: 3000,
+	// 		easing: "swing",
+	// 		direction: "vertical"
+	// 	});
+	// } catch(err) {
 
-	}
+	// }
 
 	/* ---------------------------------------------------------------------- */
 	/*	Contact Map
 	/* ---------------------------------------------------------------------- */
-	var contact = {"lat":"51.51152", "lon":"-0.104198"}; //Change a map coordinate here!
+	// var contact = {"lat":"51.51152", "lon":"-0.104198"}; //Change a map coordinate here!
 
-	try {
-		var mapContainer = $('.map');
-		mapContainer.gmap3({
-			action: 'addMarker',
-			latLng: [contact.lat, contact.lon],
-			map:{
-				center: [contact.lat, contact.lon],
-				zoom: 14
-				},
-			},
-			{action: 'setOptions', args:[{scrollwheel:true}]}
-		);
-	} catch(err) {
+	// try {
+	// 	var mapContainer = $('.map');
+	// 	mapContainer.gmap3({
+	// 		action: 'addMarker',
+	// 		latLng: [contact.lat, contact.lon],
+	// 		map:{
+	// 			center: [contact.lat, contact.lon],
+	// 			zoom: 14
+	// 			},
+	// 		},
+	// 		{action: 'setOptions', args:[{scrollwheel:true}]}
+	// 	);
+	// } catch(err) {
 
-	}
+	// }
 
 	/* ---------------------------------------------------------------------- */
 	/*	magnific-popup
 	/* ---------------------------------------------------------------------- */
 
-	try {
-		// Example with multiple objects
-		$('.zoom').magnificPopup({
-			type: 'image'
-		});
-	} catch(err) {
+	// try {
+	// 	// Example with multiple objects
+	// 	$('.zoom').magnificPopup({
+	// 		type: 'image'
+	// 	});
+	// } catch(err) {
 
-	}
+	// }
 
-	try {
-		// Example with multiple objects
-		$('.zoom.video').magnificPopup({
-			type: 'iframe'
-		});
-	} catch(err) {
+	// try {
+	// 	// Example with multiple objects
+	// 	$('.zoom.video').magnificPopup({
+	// 		type: 'iframe'
+	// 	});
+	// } catch(err) {
 
-	}
+	// }
 
 	/* ---------------------------------------------------------------------- */
 	/*	Accordion
@@ -340,7 +340,6 @@ $(document).ready(function($) {
 				cache: false,
 				data: $('.contact-work-form').serialize(),
 				success: function(data) {
-
 					if(data.info !== 'error'){
 						$this.parents('form').find('input[type=text],textarea,select').filter(':visible').val('');
 						message.hide().removeClass('success').removeClass('error').addClass('success').html(data.msg).fadeIn('slow').delay(5000).fadeOut('slow');
@@ -394,12 +393,11 @@ $(document).ready(function($) {
 			var sy = scrollY();
 			if ( sy >= changeHeaderOn ) {
 				$( 'header' ).addClass('active');
-				// $('.navbar-collapse').css({marginTop: "67px"})
+				$('.go-top').addClass('active')
 			}
 			else {
 				$( 'header' ).removeClass('active');
-				// $('.navbar-collapse').css({marginTop: "85px"})
-
+				$( '.go-top' ).removeClass('active');
 			}
 			didScroll = false;
 		}
