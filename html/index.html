@@ -592,7 +592,8 @@
 									<img src="./images/qrcode.jpg" alt="">
 								</div>
 							</div>
-							<div class="chat-online" title="Send Message For Us"><i class="fa-solid fa-comments" id="chatMessage"></i></div>
+							<div class="chat-online" title="Send Message For Us"><i class="fa-solid fa-comments" id="chatMessage"></i>
+							</div>
 
 						</div>
 						<h3 class="mt-2">Follow Us</h3>
@@ -611,9 +612,8 @@
 			</div>
 		</footer>
 		<!-- footer end -->
-		<!-- Newsletter start -->
 
-		<!-- Newsletter end -->
+		<!-- End Container -->
 	</div>
 
 	<!-- Newsletter Form start -->
@@ -628,34 +628,38 @@
 			<form>
 				<div class="form-group">
 					<label for="name">Name</label>
-					<input type="email" class="form-control input-lg" id="name" placeholder="Input your name">
+					<input type="email" class="form-control" id="name" placeholder="Input your name">
 				</div>
 				<div class="form-group">
 					<label class="control-label" for="email">Email</label>
-					<input type="text" class="form-control input-lg" id="email" placeholder="Input your email">
+					<input type="text" class="form-control" id="email" placeholder="Input your email">
 				</div>
 				<div class="form-group">
-					<label>
-						<input type="checkbox" value="1" checked> When we have some new products, we will notice you first, Do you acceppt ?
-					</label>
+					<label class="el-checkbox"><span class="el-checkbox__input is-checked"><span
+								class="el-checkbox__inner"></span><input type="checkbox" aria-hidden="false"
+								class="el-checkbox__original" value=""></span><span class="el-checkbox__label">When we have some new products, we will notice you first, Do you acceppt ?
+							<!---->
+						</span></label>
+					<!-- <label>
+						<input type="checkbox" class="input-radio" value="true" checked> When we have some new products, we will notice you first, Do you acceppt ?
+					</label> -->
 				</div>
 				<div class="form-group">
 					<label class="control-label" for="Phone">Phone</label>
-					<input type="text" class="form-control input-lg" id="Phone" placeholder="Input your phone">
+					<input type="text" class="form-control" id="Phone" placeholder="Input your phone">
 				</div>
 				<div class="form-group">
 					<label class="control-label" for="Message">Message</label>
-					<textarea type="text" class="form-control" rows="6" id="Message" placeholder="Input your message"></textarea>
+					<textarea type="text" class="form-control" rows="4" id="Message" placeholder="Input your message"></textarea>
 				</div>
 			</form>
 		</div>
 		<div class="form-footer">
-			<button type="submit" class="btn btn-primary btn-lg btn-theme">SUBMIT</button>
+			<button type="submit" class="btn btn-primary btn-theme">SUBMIT</button>
 		</div>
 	</div>
 	<!-- Newsletter Form End -->
 
-	<!-- End Container -->
 	<div class="go-top">
 		<i class="fa-solid fa-circle-arrow-up"></i>
 	</div>
@@ -676,15 +680,21 @@
 			paginationClickable: true,
 			lazyLoading: true,
 		})
-
-		$('#chatMessage').click(function(e){
+		// Chat box hide and show
+		$('#chatMessage').click(function (e) {
 			$('#newsletterPopForm').fadeIn(200)
 		})
-		$('.chat-bottom').click(function(e){
+		$('.chat-bottom').click(function (e) {
 			$('#newsletterPopForm').fadeIn(200)
 		})
-		$('.form-close').click(function(){
+		$('.form-close').click(function () {
 			$('#newsletterPopForm').fadeOut(100)
+		})
+		// checkbox 
+		$('.el-checkbox__input').click(function(e){
+			e.preventDefault()
+			const _this = $('.el-checkbox__input')
+			_this.hasClass('is-checked') ? _this.removeClass('is-checked') : _this.addClass('is-checked')
 		})
 	</script>
 </body>
